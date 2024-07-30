@@ -1,7 +1,7 @@
-[![Pub](https://img.shields.io/pub/v/wired_elements?label=wired_elements&color=blue)](https://pub.dev/packages/wired_elements)
-[![likes](https://badges.bar/wired_elements/likes)](https://pub.dev/packages/wired_elements/score)
-[![GitHub Release Date](https://img.shields.io/github/release-date/KevinZhang19870314/wired_elements)](https://pub.dev/packages/wired_elements)
-[![GitHub](https://img.shields.io/github/license/KevinZhang19870314/wired_elements)](https://github.com/KevinZhang19870314/wired_elements/blob/main/LICENSE)
+[![Pub](https://img.shields.io/pub/v/wiredUI?label=wiredUI&color=blue)](https://pub.dev/packages/wiredUI)
+[![likes](https://badges.bar/wiredUI/likes)](https://pub.dev/packages/wiredUI/score)
+[![GitHub Release Date](https://img.shields.io/github/release-date/DemonXD/wiredUI)](https://pub.dev/packages/wiredUI)
+[![GitHub](https://img.shields.io/github/license/DemonXD/wiredUI)](https://github.com/DemonXD/wiredUI/blob/main/LICENSE)
 
 # wired_elements
 
@@ -13,28 +13,28 @@ In the `dependencies:` section of your `pubspec.yaml`, add the following line:
 
 ```yaml
 dependencies:
-  wired_elements: <latest_version>
+  flutter_wired: <latest_version>
 ```
 ## Basic usage
 
-For more usage, please see the [examples](https://github.com/KevinZhang19870314/wired_elements/blob/main/example/lib/demos.dart).
+For more usage, please see the [examples](https://github.com/DemonXD/wiredUI/blob/main/example/lib/demos.dart).
 
 ## Samples
 
 Some screenshots of the example app:
 
 <p>
-    <img src="https://raw.githubusercontent.com/KevinZhang19870314/wired_elements/main/example/assets/screenshots/wired_button.jpg" width="187" heght="333" />
-    <img src="https://raw.githubusercontent.com/KevinZhang19870314/wired_elements/main/example/assets/screenshots/wired_card.jpg" width="187" heght="333" />
-    <img src="https://raw.githubusercontent.com/KevinZhang19870314/wired_elements/main/example/assets/screenshots/wired_checkbox.jpg" width="187" heght="333" />
-    <img src="https://raw.githubusercontent.com/KevinZhang19870314/wired_elements/main/example/assets/screenshots/wired_combo.jpg" width="187" heght="333" />
-    <img src="https://raw.githubusercontent.com/KevinZhang19870314/wired_elements/main/example/assets/screenshots/wired_dialog.jpg" width="187" heght="333" />
-    <img src="https://raw.githubusercontent.com/KevinZhang19870314/wired_elements/main/example/assets/screenshots/wired_divider.jpg" width="187" heght="333" />
-    <img src="https://raw.githubusercontent.com/KevinZhang19870314/wired_elements/main/example/assets/screenshots/wired_input.jpg" width="187" heght="333" />
-    <img src="https://raw.githubusercontent.com/KevinZhang19870314/wired_elements/main/example/assets/screenshots/wired_radio.jpg" width="187" heght="333" />
-    <img src="https://raw.githubusercontent.com/KevinZhang19870314/wired_elements/main/example/assets/screenshots/wired_slider.jpg" width="187" heght="333" />
-    <img src="https://raw.githubusercontent.com/KevinZhang19870314/wired_elements/main/example/assets/screenshots/wired_progress.jpg" width="187" heght="333" />
-    <img src="https://raw.githubusercontent.com/KevinZhang19870314/wired_elements/main/example/assets/screenshots/wired_calendar.jpg" width="187" heght="333" />
+    <img src="https://raw.githubusercontent.com/DemonXD/wiredUI/main/example/assets/screenshots/wired_button.jpg" width="187" heght="333" />
+    <img src="https://raw.githubusercontent.com/DemonXD/wiredUI/main/example/assets/screenshots/wired_card.jpg" width="187" heght="333" />
+    <img src="https://raw.githubusercontent.com/DemonXD/wiredUI/main/example/assets/screenshots/wired_checkbox.jpg" width="187" heght="333" />
+    <img src="https://raw.githubusercontent.com/DemonXD/wiredUI/main/example/assets/screenshots/wired_combo.jpg" width="187" heght="333" />
+    <img src="https://raw.githubusercontent.com/DemonXD/wiredUI/main/example/assets/screenshots/wired_dialog.jpg" width="187" heght="333" />
+    <img src="https://raw.githubusercontent.com/DemonXD/wiredUI/main/example/assets/screenshots/wired_divider.jpg" width="187" heght="333" />
+    <img src="https://raw.githubusercontent.com/DemonXD/wiredUI/main/example/assets/screenshots/wired_input.jpg" width="187" heght="333" />
+    <img src="https://raw.githubusercontent.com/DemonXD/wiredUI/main/example/assets/screenshots/wired_radio.jpg" width="187" heght="333" />
+    <img src="https://raw.githubusercontent.com/DemonXD/wiredUI/main/example/assets/screenshots/wired_slider.jpg" width="187" heght="333" />
+    <img src="https://raw.githubusercontent.com/DemonXD/wiredUI/main/example/assets/screenshots/wired_progress.jpg" width="187" heght="333" />
+    <img src="https://raw.githubusercontent.com/DemonXD/wiredUI/main/example/assets/screenshots/wired_calendar.jpg" width="187" heght="333" />
 </p>
 
 ## Others
