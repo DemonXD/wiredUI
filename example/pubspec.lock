@@ -78,9 +78,10 @@ packages:
   flutter_wired:
     dependency: "direct main"
     description:
-      path: ".."
-      relative: true
-    source: path
+      name: flutter_wired
+      sha256: ed64508263222a1e2a7edecf9109d5bedc09836d8b4e082581a36ff36c2ff015
+      url: "https://pub.flutter-io.cn"
+    source: hosted
     version: "0.0.1"
   leak_tracker:
     dependency: transitive
