@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
           title: const WiredText(
-        'Flutter wired_elements example',
+        'Flutter flutter_wired example',
         fontSize: 20.0,
       )),
       body: DemoList(),

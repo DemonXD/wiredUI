@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wired_elements/wired_elements.dart';
+import 'package:flutter_wired/flutter_wired.dart';
 
 import 'wired_text.dart';
 

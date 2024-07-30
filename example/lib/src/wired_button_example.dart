@@ -1,6 +1,6 @@
 import 'package:example/src/wired_text.dart';
 import 'package:flutter/material.dart';
-import 'package:wired_elements/wired_elements.dart';
+import 'package:flutter_wired/flutter_wired.dart';
 
 class WiredButtonExample extends StatelessWidget {
   final String title;
