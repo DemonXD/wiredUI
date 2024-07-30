@@ -5,47 +5,47 @@ import 'wired_text.dart';
 
 class WiredProgressExample extends StatefulWidget {
   final String title;
-  const WiredProgressExample({Key? key, required this.title}) : super(key: key);
+  const WiredProgressExample({super.key, required this.title});
 
   @override
-  _WiredProgressExampleState createState() => _WiredProgressExampleState();
+  State<WiredProgressExample> createState() => _WiredProgressExampleState();
 }
 
 class _WiredProgressExampleState extends State<WiredProgressExample>
     with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
-    final _controller1 = AnimationController(
+    final controller1 = AnimationController(
         duration: const Duration(milliseconds: 1000), vsync: this);
-    final _controller2 = AnimationController(
+    final controller2 = AnimationController(
         duration: const Duration(milliseconds: 1000), vsync: this);
     return Scaffold(
       appBar: AppBar(
         title: WiredText(
-          '${widget.title}',
+          widget.title,
           fontSize: 20.0,
         ),
       ),
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20.0),
+        padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            WiredProgress(controller: _controller1, value: 0.5),
-            SizedBox(height: 20.0),
+            WiredProgress(controller: controller1, value: 0.5),
+            const SizedBox(height: 20.0),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                ..._example(_controller1),
+                ..._example(controller1),
               ],
             ),
-            SizedBox(height: 50.0),
-            WiredProgress(controller: _controller2),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 50.0),
+            WiredProgress(controller: controller2),
+            const SizedBox(height: 20.0),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                ..._example(_controller2),
+                ..._example(controller2),
               ],
             ),
           ],
@@ -57,21 +57,21 @@ class _WiredProgressExampleState extends State<WiredProgressExample>
   List<Widget> _example(AnimationController controller) {
     return [
       WiredButton(
-        child: Text('Start'),
+        child: const Text('Start'),
         onPressed: () {
           controller.forward();
         },
       ),
-      SizedBox(width: 20.0),
+      const SizedBox(width: 20.0),
       WiredButton(
-        child: Text('Stop'),
+        child: const Text('Stop'),
         onPressed: () {
           controller.stop();
         },
       ),
-      SizedBox(width: 20.0),
+      const SizedBox(width: 20.0),
       WiredButton(
-        child: Text('Reset'),
+        child: const Text('Reset'),
         onPressed: () {
           controller.reset();
         },

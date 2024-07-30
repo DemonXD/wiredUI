@@ -1,10 +1,11 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'demos.dart';
 import 'src/wired_text.dart';
 
 class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,15 +14,17 @@ class HomePage extends StatelessWidget {
         'Flutter flutter_wired example',
         fontSize: 20.0,
       )),
-      body: DemoList(),
+      body: const DemoList(),
     );
   }
 }
 
 class DemoList extends StatelessWidget {
+  const DemoList({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SafeArea(
       child: ListView.separated(
         separatorBuilder: (context, position) => Container(
           color: Theme.of(context).cardColor,
@@ -41,7 +44,7 @@ class DemoList extends StatelessWidget {
 class DemoRow extends StatelessWidget {
   final Demo demo;
 
-  const DemoRow({Key? key, required this.demo}) : super(key: key);
+  const DemoRow({super.key, required this.demo});
 
   @override
   Widget build(BuildContext context) {
@@ -58,10 +61,10 @@ class DemoRow extends StatelessWidget {
           demo.description,
           fontSize: 16.0,
         ),
-        leading: Container(
-          child: demo.icon,
+        leading: SizedBox(
           width: 42,
           height: 42,
+          child: demo.icon,
         ),
         onTap: () => Navigator.push<MaterialPageRoute>(
           context,

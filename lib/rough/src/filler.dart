@@ -2,9 +2,7 @@ import 'dart:math';
 
 import '../rough.dart';
 
-import 'config.dart';
 import 'core.dart';
-import 'entities.dart';
 import 'geometry.dart';
 import 'renderer.dart';
 
@@ -455,7 +453,10 @@ class SolidFiller extends Filler {
                     _config!.drawConfig!.offsetSymmetric(_config!.fillWeight!),
               ))
           .toList();
-      result..add(result.first)..add(result[1])..add(result[2]);
+      result
+        ..add(result.first)
+        ..add(result[1])
+        ..add(result[2]);
     }
     return OpSet(
         type: OpSetType.fillPath,

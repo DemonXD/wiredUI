@@ -89,7 +89,7 @@ class _WiredCalendarState extends State<WiredCalendar> {
 
   _buildWeekdaysNav() {
     return Padding(
-      padding: EdgeInsets.symmetric(
+      padding: const EdgeInsets.symmetric(
         horizontal: 10.0,
       ),
       child: Row(

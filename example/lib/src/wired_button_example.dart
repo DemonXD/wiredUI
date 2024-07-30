@@ -4,48 +4,40 @@ import 'package:flutter_wired/flutter_wired.dart';
 
 class WiredButtonExample extends StatelessWidget {
   final String title;
-  const WiredButtonExample({Key? key, required this.title}) : super(key: key);
+  const WiredButtonExample({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: WiredText(
-          '$title',
+          title,
           fontSize: 20.0,
         ),
       ),
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 50.0, vertical: 50.0),
+        padding: const EdgeInsets.symmetric(horizontal: 50.0, vertical: 50.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             WiredButton(
-              child: WiredText('Wired Button'),
-              onPressed: () {
-                print('Wired Button');
-              },
+              child: const WiredText('Wired Button'),
+              onPressed: () {},
             ),
-            SizedBox(height: 50.0),
+            const SizedBox(height: 50.0),
             WiredButton(
-              child: WiredText('Submit'),
-              onPressed: () {
-                print('Submit');
-              },
+              child: const WiredText('Submit'),
+              onPressed: () {},
             ),
-            SizedBox(height: 50.0),
+            const SizedBox(height: 50.0),
             WiredButton(
-              child: WiredText('Cancel'),
-              onPressed: () {
-                print('Cancel');
-              },
+              child: const WiredText('Cancel'),
+              onPressed: () {},
             ),
-            SizedBox(height: 50.0),
+            const SizedBox(height: 50.0),
             WiredButton(
-              child: WiredText('Long text button ...... hah'),
-              onPressed: () {
-                print('Long text button ...... hah');
-              },
+              child: const WiredText('Long text button ...... hah'),
+              onPressed: () {},
             ),
           ],
         ),

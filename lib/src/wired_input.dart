@@ -80,7 +80,7 @@ class WiredInput extends StatelessWidget {
                   border: InputBorder.none,
                   hintText: hintText,
                   hintStyle: hintStyle,
-                  contentPadding: EdgeInsets.symmetric(horizontal: 5.0),
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 5.0),
                 ),
                 onChanged: onChanged,
               ),

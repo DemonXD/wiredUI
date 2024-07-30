@@ -88,7 +88,7 @@ class _WiredRadioState<T> extends State<WiredRadio<T>> {
         Radio<T>(
           value: widget.value,
           groupValue: widget.groupValue,
-          fillColor: MaterialStateProperty.all(Colors.transparent),
+          fillColor: WidgetStateProperty.all(Colors.transparent),
           onChanged: (value) {
             if (widget.onChanged != null) {
               _isSelected = widget.onChanged!(value);

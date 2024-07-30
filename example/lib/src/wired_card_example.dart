@@ -5,22 +5,22 @@ import 'wired_text.dart';
 
 class WiredCardExample extends StatelessWidget {
   final String title;
-  const WiredCardExample({Key? key, required this.title}) : super(key: key);
+  const WiredCardExample({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: WiredText(
-          '$title',
+          title,
           fontSize: 20.0,
         ),
       ),
       body: Column(
         children: [
-          SizedBox(height: 30.0),
+          const SizedBox(height: 30.0),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20.0),
+            padding: const EdgeInsets.symmetric(horizontal: 20.0),
             child: WiredCard(
               height: 150.0,
               fill: false,
@@ -52,18 +52,16 @@ class WiredCardExample extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 30.0),
+          const SizedBox(height: 30.0),
           Container(
-            margin: EdgeInsets.all(10.0),
+            margin: const EdgeInsets.all(10.0),
             color: Colors.blue.shade100,
             child: WiredCard(
               fill: true,
               height: 100.0,
               child: InkWell(
                 splashColor: Colors.blue.withAlpha(30),
-                onTap: () {
-                  print('Card tapped.');
-                },
+                onTap: () {},
                 child: const SizedBox(
                   width: 300,
                   height: 100,

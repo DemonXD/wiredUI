@@ -9,11 +9,11 @@ class WiredText extends StatelessWidget {
 
   const WiredText(
     this.data, {
-    Key? key,
+    super.key,
     this.fontWeight = FontWeight.w500,
     this.fontSize = 18.0,
     this.color = Colors.black,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

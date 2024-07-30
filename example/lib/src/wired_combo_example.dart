@@ -4,21 +4,21 @@ import 'package:flutter_wired/flutter_wired.dart';
 
 class WiredComboExample extends StatelessWidget {
   final String title;
-  const WiredComboExample({Key? key, required this.title}) : super(key: key);
+  const WiredComboExample({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: WiredText(
-          '$title',
+          title,
           fontSize: 20.0,
         ),
       ),
       body: Column(
         children: [
           Padding(
-            padding: EdgeInsets.all(50.0),
+            padding: const EdgeInsets.all(50.0),
             child: WiredCombo(
               value: 'One',
               items: ['One', 'Two', 'Free', 'Four']
@@ -26,18 +26,16 @@ class WiredComboExample extends StatelessWidget {
                 return DropdownMenuItem<String>(
                   value: value,
                   child: Padding(
-                    padding: EdgeInsets.only(left: 5.0),
+                    padding: const EdgeInsets.only(left: 5.0),
                     child: WiredText(value),
                   ),
                 );
               }).toList(),
-              onChanged: (value) {
-                print('$value');
-              },
+              onChanged: (value) {},
             ),
           ),
           Padding(
-            padding: EdgeInsets.all(50.0),
+            padding: const EdgeInsets.all(50.0),
             child: WiredCombo(
               value: 'Banana',
               items: ['Apple', 'Banana', 'Peach', 'Orange', 'Sandwich']
@@ -45,14 +43,12 @@ class WiredComboExample extends StatelessWidget {
                 return DropdownMenuItem<String>(
                   value: value,
                   child: Padding(
-                    padding: EdgeInsets.only(left: 5.0),
+                    padding: const EdgeInsets.only(left: 5.0),
                     child: WiredText(value),
                   ),
                 );
               }).toList(),
-              onChanged: (value) {
-                print('$value');
-              },
+              onChanged: (value) {},
             ),
           ),
         ],

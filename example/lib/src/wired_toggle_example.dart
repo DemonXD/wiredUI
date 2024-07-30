@@ -5,41 +5,37 @@ import 'wired_text.dart';
 
 class WiredToggleExample extends StatelessWidget {
   final String title;
-  const WiredToggleExample({Key? key, required this.title}) : super(key: key);
+  const WiredToggleExample({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
-    bool _firstVal = false;
-    bool _secondVal = true;
+    bool firstVal = false;
+    bool secondVal = true;
 
     return Scaffold(
       appBar: AppBar(
         title: WiredText(
-          '$title',
+          title,
           fontSize: 20.0,
         ),
       ),
       body: Container(
         color: Colors.transparent,
-        padding: EdgeInsets.all(50.0),
+        padding: const EdgeInsets.all(50.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             WiredToggle(
-              value: _firstVal,
+              value: firstVal,
               onChange: (val) {
-                print(val);
-
                 return false;
               },
             ),
-            SizedBox(height: 50.0),
+            const SizedBox(height: 50.0),
             WiredToggle(
-              value: _secondVal,
+              value: secondVal,
               onChange: (val) {
-                print(val);
-
                 return true;
               },
             ),

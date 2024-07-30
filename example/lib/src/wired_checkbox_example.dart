@@ -4,39 +4,35 @@ import 'package:flutter_wired/flutter_wired.dart';
 
 class WiredCheckboxExample extends StatelessWidget {
   final String title;
-  const WiredCheckboxExample({Key? key, required this.title}) : super(key: key);
+  const WiredCheckboxExample({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: WiredText(
-          '$title',
+          title,
           fontSize: 20.0,
         ),
       ),
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 50.0, vertical: 50.0),
+        padding: const EdgeInsets.symmetric(horizontal: 50.0, vertical: 50.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             WiredCheckbox(
               value: false,
-              onChanged: (value) {
-                print('Wired Checkbox $value');
-              },
+              onChanged: (value) {},
             ),
-            SizedBox(height: 50.0),
+            const SizedBox(height: 50.0),
             Row(
               children: [
                 WiredCheckbox(
                   value: true,
-                  onChanged: (value) {
-                    print('Labeled Wired Checkbox $value');
-                  },
+                  onChanged: (value) {},
                 ),
-                SizedBox(width: 5.0),
-                WiredText('Terms & Privacy'),
+                const SizedBox(width: 5.0),
+                const WiredText('Terms & Privacy'),
               ],
             ),
           ],

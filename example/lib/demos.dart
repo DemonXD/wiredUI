@@ -12,80 +12,80 @@ import 'src/wired_radio_example.dart';
 import 'src/wired_slider_example.dart';
 import 'src/wired_toggle_example.dart';
 
-final String handWriting1 = 'Shadows Into Light';
-final String handWriting2 = 'Architects Daughter';
+const String handWriting1 = 'Shadows Into Light';
+const String handWriting2 = 'Architects Daughter';
 
 final List<Demo> demos = [
   NormalDemo(
     'Wired button example',
     'Wired button',
-    (_) => WiredButtonExample(title: 'Wired button example'),
+    (_) => const WiredButtonExample(title: 'Wired button example'),
     const Icon(Icons.touch_app, size: 36),
   ),
   NormalDemo(
     'Wired card example',
     'Wired card',
-    (_) => WiredCardExample(title: 'Wired card'),
+    (_) => const WiredCardExample(title: 'Wired card'),
     const Icon(Icons.dashboard, size: 36),
   ),
   NormalDemo(
     'Wired checkbox example',
     'Wired checkbox',
-    (_) => WiredCheckboxExample(title: 'Wired checkbox'),
+    (_) => const WiredCheckboxExample(title: 'Wired checkbox'),
     const Icon(Icons.check_box, size: 36),
   ),
   NormalDemo(
     'Wired combo example',
     'Wired combo',
-    (_) => WiredComboExample(title: 'Wired combo'),
+    (_) => const WiredComboExample(title: 'Wired combo'),
     const Icon(Icons.arrow_drop_down, size: 36),
   ),
   NormalDemo(
     'Wired dialog example',
     'Wired dialog',
-    (_) => WiredDialogExample(title: 'Wired dialog'),
+    (_) => const WiredDialogExample(title: 'Wired dialog'),
     const Icon(Icons.open_in_new, size: 36),
   ),
   NormalDemo(
     'Wired divider example',
     'Wired divider',
-    (_) => WiredDividerExample(title: 'Wired divider'),
+    (_) => const WiredDividerExample(title: 'Wired divider'),
     const Icon(Icons.horizontal_split, size: 36),
   ),
   NormalDemo(
     'Wired input example',
     'Wired input',
-    (_) => WiredInputExample(title: 'Wired input'),
+    (_) => const WiredInputExample(title: 'Wired input'),
     const Icon(Icons.keyboard, size: 36),
   ),
   NormalDemo(
     'Wired radio example',
     'Wired radio',
-    (_) => WiredRadioExample(title: 'Wired radio'),
+    (_) => const WiredRadioExample(title: 'Wired radio'),
     const Icon(Icons.radio_button_checked, size: 36),
   ),
   NormalDemo(
     'Wired slider example',
     'Wired slider',
-    (_) => WiredSliderExample(title: 'Wired slider'),
+    (_) => const WiredSliderExample(title: 'Wired slider'),
     const Icon(Icons.linear_scale, size: 36),
   ),
   NormalDemo(
     'Wired toggle example',
     'Wired toggle',
-    (_) => WiredToggleExample(title: 'Wired toggle'),
+    (_) => const WiredToggleExample(title: 'Wired toggle'),
     const Icon(Icons.toggle_on, size: 36),
   ),
   NormalDemo(
     'Wired progress example',
     'Wired progress',
-    (_) => WiredProgressExample(title: 'Wired progress'),
+    (_) => const WiredProgressExample(title: 'Wired progress'),
     const Icon(Icons.portrait, size: 36),
   ),
   NormalDemo(
     'Wired calendar example',
     'Wired calendar',
-    (_) => WiredCalendarExample(title: 'Wired calendar'),
+    (_) => const WiredCalendarExample(title: 'Wired calendar'),
     const Icon(Icons.calendar_today, size: 36),
   ),
 ];

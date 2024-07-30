@@ -5,10 +5,10 @@ import 'wired_text.dart';
 
 class WiredCalendarExample extends StatefulWidget {
   final String title;
-  const WiredCalendarExample({Key? key, required this.title}) : super(key: key);
+  const WiredCalendarExample({super.key, required this.title});
 
   @override
-  _WiredCalendarExampleState createState() => _WiredCalendarExampleState();
+  State<WiredCalendarExample> createState() => _WiredCalendarExampleState();
 }
 
 class _WiredCalendarExampleState extends State<WiredCalendarExample> {
@@ -17,19 +17,17 @@ class _WiredCalendarExampleState extends State<WiredCalendarExample> {
     return Scaffold(
       appBar: AppBar(
         title: WiredText(
-          '${widget.title}',
+          widget.title,
           fontSize: 20.0,
         ),
       ),
       body: Container(
         color: Colors.grey.shade200,
-        padding: EdgeInsets.all(15.0),
+        padding: const EdgeInsets.all(15.0),
         height: 460.0,
         child: WiredCalendar(
           selected: '20210722',
-          onSelected: (value) {
-            print('Selected date: $value');
-          },
+          onSelected: (value) {},
         ),
       ),
     );

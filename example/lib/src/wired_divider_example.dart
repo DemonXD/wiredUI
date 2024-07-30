@@ -5,21 +5,21 @@ import 'wired_text.dart';
 
 class WiredDividerExample extends StatelessWidget {
   final String title;
-  const WiredDividerExample({Key? key, required this.title}) : super(key: key);
+  const WiredDividerExample({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: WiredText(
-          '$title',
+          title,
           fontSize: 20.0,
         ),
       ),
       body: Container(
-        padding: EdgeInsets.fromLTRB(15.0, 15.0, 15.0, 0),
+        padding: const EdgeInsets.fromLTRB(15.0, 15.0, 15.0, 0),
         color: Colors.white,
-        child: SingleChildScrollView(
+        child: const SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,

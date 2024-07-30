@@ -5,10 +5,10 @@ import 'wired_text.dart';
 
 class WiredSliderExample extends StatefulWidget {
   final String title;
-  const WiredSliderExample({Key? key, required this.title}) : super(key: key);
+  const WiredSliderExample({super.key, required this.title});
 
   @override
-  _WiredSliderExampleState createState() => _WiredSliderExampleState();
+  State<WiredSliderExample> createState() => _WiredSliderExampleState();
 }
 
 class _WiredSliderExampleState extends State<WiredSliderExample> {
@@ -19,12 +19,12 @@ class _WiredSliderExampleState extends State<WiredSliderExample> {
     return Scaffold(
       appBar: AppBar(
         title: WiredText(
-          '${widget.title}',
+          widget.title,
           fontSize: 20.0,
         ),
       ),
       body: Container(
-        padding: EdgeInsets.all(25.0),
+        padding: const EdgeInsets.all(25.0),
         height: 200.0,
         child: WiredSlider(
           value: _currentSliderValue,
@@ -36,7 +36,6 @@ class _WiredSliderExampleState extends State<WiredSliderExample> {
             setState(() {
               _currentSliderValue = value;
             });
-            print('$_currentSliderValue');
             return true;
           },
         ),

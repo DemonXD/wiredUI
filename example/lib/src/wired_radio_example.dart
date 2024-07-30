@@ -5,10 +5,10 @@ import 'wired_text.dart';
 
 class WiredRadioExample extends StatefulWidget {
   final String title;
-  const WiredRadioExample({Key? key, required this.title}) : super(key: key);
+  const WiredRadioExample({super.key, required this.title});
 
   @override
-  _WiredRadioExampleState createState() => _WiredRadioExampleState();
+  State<WiredRadioExample> createState() => _WiredRadioExampleState();
 }
 
 class _WiredRadioExampleState extends State<WiredRadioExample> {
@@ -19,20 +19,19 @@ class _WiredRadioExampleState extends State<WiredRadioExample> {
     return Scaffold(
       appBar: AppBar(
         title: WiredText(
-          '${widget.title}',
+          widget.title,
           fontSize: 20.0,
         ),
       ),
       body: Column(
         children: <Widget>[
-          SizedBox(height: 15.0),
+          const SizedBox(height: 15.0),
           ListTile(
             title: const Text('Lafayette'),
             leading: WiredRadio<SingingCharacter>(
               value: SingingCharacter.lafayette,
               groupValue: _character,
               onChanged: (SingingCharacter? value) {
-                print('$value');
                 setState(() {
                   _character = value;
                 });
@@ -47,7 +46,6 @@ class _WiredRadioExampleState extends State<WiredRadioExample> {
               value: SingingCharacter.jefferson,
               groupValue: _character,
               onChanged: (SingingCharacter? value) {
-                print('$value');
                 setState(() {
                   _character = value;
                 });
