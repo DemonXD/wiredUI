@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wired_elements/rough/rough.dart';
+import 'package:flutter_wired/rough/rough.dart';
 
 import 'canvas/wired_canvas.dart';
 import 'const.dart';

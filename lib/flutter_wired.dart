@@ -1,4 +1,4 @@
-library wired_elements;
+library flutter_wired;
 
 export 'src/wired_button.dart';
 export 'src/wired_card.dart';

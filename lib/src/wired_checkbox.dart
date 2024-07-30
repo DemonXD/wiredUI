@@ -67,7 +67,7 @@ class _WiredCheckboxState extends State<WiredCheckbox> with WiredRepaintMixin {
           // Checkbox default size is 18.0, so 18.0 * 1.5 = 27 for the outer Container's width & height
           scale: 1.5,
           child: Checkbox(
-            fillColor: MaterialStateProperty.all(Colors.transparent),
+            fillColor: WidgetStateProperty.all(Colors.transparent),
             checkColor: borderColor,
             onChanged: (value) {
               setState(() {

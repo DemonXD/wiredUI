@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wired_elements/src/const.dart';
+import 'package:flutter_wired/src/const.dart';
 import 'canvas/wired_canvas.dart';
 import 'wired_base.dart';
 

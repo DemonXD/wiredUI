@@ -35,17 +35,12 @@ class WiredButton extends WiredBaseWidget {
       height: 42.0,
       decoration: RoughBoxDecoration(
         shape: RoughBoxShape.rectangle,
-        borderStyle: RoughDrawingStyle(
-          width: 1,
-          color: borderColor,
-        ),
+        borderStyle: RoughDrawingStyle(width: 1, color: borderColor),
       ),
       child: SizedBox(
         height: double.infinity,
         child: TextButton(
-          style: TextButton.styleFrom(
-            primary: textColor,
-          ),
+          style: TextButton.styleFrom(foregroundColor: textColor),
           child: child,
           onPressed: onPressed,
         ),

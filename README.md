@@ -3,7 +3,7 @@
 [![GitHub Release Date](https://img.shields.io/github/release-date/DemonXD/wiredUI)](https://pub.dev/packages/wiredUI)
 [![GitHub](https://img.shields.io/github/license/DemonXD/wiredUI)](https://github.com/DemonXD/wiredUI/blob/main/LICENSE)
 
-# wired_elements
+# flutter_wired
 
 Wired Elements is a series of basic UI Elements that have a hand drawn look. These can be used for wireframes, mockups, or just the fun hand-drawn look. It's the Flutter implementation of [wired-elements](https://github.com/rough-stuff/wired-elements). It's base on the library of [flutter_rough](https://github.com/sergiandreplace/flutter_rough).
 

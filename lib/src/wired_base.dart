@@ -65,7 +65,7 @@ abstract class WiredBaseWidget extends StatelessWidget {
 /// The mixin for isolates repaints.
 ///
 /// See [WiredBaseWidget] for same purpose.
-abstract class WiredRepaintMixin {
+abstract mixin class WiredRepaintMixin {
   Widget buildWiredElement({Key? key, required Widget child}) {
     return RepaintBoundary(
       key: key,
