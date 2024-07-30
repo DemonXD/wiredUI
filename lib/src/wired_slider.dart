@@ -158,7 +158,9 @@ class _WiredSliderState extends State<WiredSlider> {
     try {
       var box = context.findRenderObject() as RenderBox;
       width = box.size.width;
-    } catch (e) {}
+    } catch (e) {
+      width = 0;
+    }
 
     return width;
   }

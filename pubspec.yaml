@@ -1,7 +1,8 @@
 name: flutter_wired
 description: flutter_wired is a series of basic UI Elements that have a hand drawn look. These can be used for wire frames, mockups, or just the fun hand-drawn look. 
 version: 0.0.1
-homepage: https://github.com/DemonXD/flutter_wired
+Homepage: https://github.com/DemonXD/flutter_wired
+repository: https://github.com/DemonXD/flutter_wired
 
 environment:
   sdk: '>=3.0.3 <4.0.0'

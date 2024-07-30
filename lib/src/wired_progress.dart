@@ -104,7 +104,9 @@ class _WiredProgressState extends State<WiredProgress> with WiredRepaintMixin {
     try {
       var box = context.findRenderObject() as RenderBox;
       width = box.size.width;
-    } catch (e) {}
+    } catch (e) {
+      width = 0;
+    }
 
     return width;
   }
