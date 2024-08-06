@@ -1,6 +1,6 @@
-[![Pub](https://img.shields.io/pub/v/wiredUI?label=wiredUI&color=blue)](https://pub.dev/packages/flutter_wired)
-[![likes](https://badges.bar/wiredUI/likes)](https://pub.dev/packages/wiredUI/score)
-[![GitHub Release Date](https://img.shields.io/github/release-date/DemonXD/wiredUI)](https://pub.dev/packages/wiredUI)
+[![Pub](https://img.shields.io/pub/v/flutter_wired?label=wiredUI&color=blue)](https://pub.dev/packages/flutter_wired)
+[![likes](https://img.shields.io/pub/likes/flutter_wired?label=wiredUI&color=green)](https://pub.dev/packages/flutter_wired/score)
+[![GitHub Release Date](https://img.shields.io/github/release-date/DemonXD/wiredUI)](https://pub.dev/packages/flutter_wired)
 [![GitHub](https://img.shields.io/github/license/DemonXD/wiredUI)](https://github.com/DemonXD/wiredUI/blob/main/LICENSE)
 
 # flutter_wired
